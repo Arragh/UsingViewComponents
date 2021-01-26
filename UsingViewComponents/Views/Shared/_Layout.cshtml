@@ -15,7 +15,8 @@
             <div class="col-5">
                 <div class="bg-info text-center m-1 p-1">
                     @*@await Component.InvokeAsync("Poco")*@
-                    @await Component.InvokeAsync(nameof(CitySummary))
+                    @*@await Component.InvokeAsync(nameof(CitySummary), new { showList = false })*@
+                    @await Component.InvokeAsync("ComboComponent")
                 </div>
             </div>
         </div>
